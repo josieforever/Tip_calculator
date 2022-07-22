@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="main.js" defer></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+  </style>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <header>S P L I <br>T T E R</header>
+  <main>
+    
+
+    <section class="calculator">
+      <div class="bill">
+        <div class="reddisplay1container"><h3>Bill</h3> <h3 class="reddisplay1" ></h3></div>
+        <input type="text" id="userinput1" placeholder="$">
+      </div>
+      <div class="tip">
+        <h3>Select Tip %</h3>
+        <h2>
+          <button type="button" value="0.05" class="josa">5%</button>
+          <button type="button" value="0.10" class="josb">10%</button>
+          <button type="button" value="0.15" class="josc">15%</button>
+          <button type="button" value="0.25" class="josd">25%</button>
+          <button type="button" value="0.50" class="jose">50%</button>
+          <button type="button" id="Custom">Custom</button>
+        </h2>
+      </div>
+      <div class="people">
+        <div class="reddisplay2container"><h3>Number of People</h3> <h3 class="reddisplay2" ></h3></div>
+        <input type="text" id="userinput2" placeholder="🧑" class="red" >
+      </div>
+
+    </section>
+    <section class="display_reset">
+      <div class="display">
+        <div class="dis1">
+            <h3>Tip Amount<em>/ person</em> </h3>
+            <h2 id="dis1">$0.00</h2>
+        </div>
+        <div class="dis2">
+            <h3>Total<em>/ person</em></h3>
+            <h2 id="dis2">$0.00</h2>
+        </div>
+      
+      </div>
+
+      <div class="reset">
+          <button type="button" onclick="amarock()" class="go">GO</button>
+          <button type="button" onclick="location.reload()">RESET</button>
+      </div>
+
+    </section>
+  </main>
+
+  
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">josiah commey</a>.
+  </div>
+</body>
+</html>
